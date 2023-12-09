@@ -7,7 +7,7 @@ index bb3d704..16b591e 100644
  # outdated
  INCLUDES := -I$(OUTPUT) -I../../libbpf/include/uapi -I$(dir $(VMLINUX)) -I$(LIBBLAZESYM_INC)
 -CFLAGS := -g -Wall
-+CFLAGS := -g -Wall -static
++CFLAGS := -g -Wall -static -Werror
  ALL_LDFLAGS := $(LDFLAGS) $(EXTRA_LDFLAGS)
  
  APPS = minimal minimal_legacy bootstrap uprobe kprobe fentry usdt sockfilter tc ksyscall task_iter

@@ -1,2 +1,4 @@
 libbpf-bootstrap/
 bin/
+src/*
+!src/.gitkeep
